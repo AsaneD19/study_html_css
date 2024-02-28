@@ -1,0 +1,44 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+main {
+  width: 960px;
+  margin: 50px auto;
+}
+
+.list-screen, .panel-screen {
+  margin-bottom: 50px;
+}
+.list {
+  padding: 20px;
+}
+
+.list:nth-child(odd) {
+  background-color: lightgray;
+}
+
+.panel-screen {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.panel {
+  width: 30%;
+  height: 200px;
+  background-color: yellow;
+  margin-bottom: 40px;
+  margin-right: 5%;
+}
+
+.panel:nth-child(3n) {
+  margin-right: 0;
+}
+
+.panel:nth-child(4n-3) {
+  background-color: orange;
+}
